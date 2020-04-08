@@ -508,14 +508,15 @@ for i in range(0,lista_for):
                 id = "Fire_scars_ID"; 
 
                       #print(dwl);
-                fecha = datetime.datetime.utcfromtimestamp(int(inicio.getInfo()['value']) / 1000).strftime('%Y-%m-%d')
-                print(fecha)
+                print('exporting data '+id + str(scar) + ' Date ' + fin+' to folder: '+fin[0:4])
+                #fecha = datetime.datetime.utcfromtimestamp(int(inicio.getInfo()['value']) / 1000).strftime('%Y-%m-%d')
+                #print(fecha)
                 export = ee.batch.Export.image.toDrive(\
-                                                       image=dwl,
-                                                       description= id + str(scar) + '_Date_' + fecha, #+ '_u' + ind_RdNBR,
+                                                       image=image_export,
+                                                       description= id + str(scar) + '_Date_' + fin, #+ '_u' + ind_RdNBR,
                                                        maxPixels= 7865781687,
                                                        region=region.getInfo()['coordinates'],
-                                                       folder = 'Google engine',
+                                                       folder = fin[0:4],
                                                        scale = 30,
                                                        fileFormat='GeoTIFF')#,
                 export.start()
@@ -524,7 +525,7 @@ for i in range(0,lista_for):
 
                 export = ee.batch.Export.table.toDrive(\
                                                        collection=firevect_poly_area_b5f_buf,
-                                                       description= id+'_' + str(scar) + '_Date_' + fecha,# + '_u' + ind_RdNBR,
-                                                       folder= anof,
+                                                       description= id+'_' + str(scar) + '_Date_' + fin,# + '_u' + ind_RdNBR,
+                                                       folder= fin[0:4],
                                                        fileFormat= 'KML')
                 export.start()
