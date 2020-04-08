@@ -327,7 +327,7 @@ for i in range(0,lista_for):
                 #print('RdNBR datos', RdNBR.reduceRegion(ee.Reducer.min(), region, 30),RdNBR.reduceRegion(ee.Reducer.max(), region, 30));
                 RdNBR = pref_nbr.expression("(NBRpre-NBRpost)/((NBRpre/1000)**(1/2))",{'NBRpre':pref_nbr.select('NBR'),'NBRpost':postf_nbr.select('NBR')}).rename('RdNBR');
                 dNBR = pref_nbr.expression("(NBRpre-NBRpost)",{'NBRpre':pref_nbr.select('NBR'),'NBRpost':postf_nbr.select('NBR')}).rename('dNBR');
-                image_export = mosaic_pre.select(['B2','B3','B4','B6','B7']).addBands(dNBR).addBands(ndvipre).addBands(ndvipos)
+                image_export = mosaic_pre.select(['B2','B3','B4','B6','B7']).addBands(mosaic_pos.select(['B2','B3','B4','B6','B7'])).addBands(dNBR).addBands(ndvipre).addBands(ndvipos)
                 #minimal value 5
                 percentile = 90
                 ind_RdNBR_init = ee.Image(ee.Number(RdNBR.reduceRegion(ee.Reducer.percentile([percentile]),region,30).get('RdNBR')))
