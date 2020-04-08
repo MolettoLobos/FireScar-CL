@@ -519,7 +519,7 @@ for i in range(0,lista_for):
                                                        scale = 30,
                                                        fileFormat='GeoTIFF')#,
                 export.start()
-
+                
                 #fire_scar_vect_filtered_filt2_areabuf
 
                 export = ee.batch.Export.table.toDrive(\
