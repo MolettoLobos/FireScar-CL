@@ -516,7 +516,7 @@ for i in range(0,lista_for):
                                                        description= id + str(scar) + '_Date_' + fin, #+ '_u' + ind_RdNBR,
                                                        maxPixels= 7865781687,
                                                        region=region.getInfo()['coordinates'],
-                                                       folder = fin[0:4],
+                                                       folder = 'FireScar-CL_'+fin[0:4],
                                                        scale = 30,
                                                        fileFormat='GeoTIFF')#,
                 export.start()
@@ -526,6 +526,6 @@ for i in range(0,lista_for):
                 export = ee.batch.Export.table.toDrive(\
                                                        collection=firevect_poly_area_b5f_buf,
                                                        description= id+'_' + str(scar) + '_Date_' + fin,# + '_u' + ind_RdNBR,
-                                                       folder= fin[0:4],
+                                                       folder= 'FireScar-CL_'+fin[0:4],
                                                        fileFormat= 'KML')
                 export.start()
