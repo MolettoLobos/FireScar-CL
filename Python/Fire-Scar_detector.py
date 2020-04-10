@@ -76,7 +76,7 @@ def get_INDEX_L8(img):
     nbr = ee.Image(image.expression('(NIR - SWIR2) / (NIR + SWIR2)', {
         'NIR': image.select('B5'),
         'SWIR2': image.select('B7')})).rename('NBR')
-    nbr2 = ee.Image(image.expression('(SWIR1 - SWIR2) / (SWIR + SWIR2)', {
+    nbr2 = ee.Image(image.expression('(SWIR1 - SWIR2) / (SWIR1 + SWIR2)', {
         'SWIR1': image.select('B6'),
         'SWIR2': image.select('B7')})).rename('NBR2')
     bai = ee.Image(image.expression('1/((0.1-Red)**2+(0.06-NIR)**2)', {
@@ -130,7 +130,7 @@ def get_INDEX_L57(img):
         nbr = ee.Image(image.expression('(NIR - SWIR2) / (NIR + SWIR2)', {
             'NIR': image.select('B4'),
             'SWIR2': image.select('B7')})).rename('NBR')
-        nbr2 = ee.Image(image.expression('(SWIR1 - SWIR2) / (SWIR + SWIR2)', {
+        nbr2 = ee.Image(image.expression('(SWIR1 - SWIR2) / (SWIR1 + SWIR2)', {
             'SWIR1': image.select('B5'),
             'SWIR2': image.select('B7')})).rename('NBR2')
         bai = ee.Image(image.expression('1/((0.1-Red)**2+(0.06-NIR)**2)', {

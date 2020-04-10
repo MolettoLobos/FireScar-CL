@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9cc8d991-e72d-431a-8adc-4d545fda0cb4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python/Fire-Scar_detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python/Fire-Scar_detector.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +69,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="240" />
-    <option name="y" value="127" />
+    <option name="y" value="126" />
     <option name="width" value="1440" />
     <option name="height" value="765" />
   </component>
@@ -188,7 +187,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586193274026</updated>
       <workItem from="1586193282139" duration="12536000" />
-      <workItem from="1586444224832" duration="649000" />
+      <workItem from="1586444224832" duration="669000" />
     </task>
     <task id="LOCAL-00001" summary="opts">
       <created>1586193338510</created>
@@ -225,11 +224,18 @@
       <option name="project" value="LOCAL" />
       <updated>1586389241543</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixed minor bugs">
+      <created>1586459048836</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586459048836</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13185000" />
+    <option name="totallyTimeSpent" value="13205000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
