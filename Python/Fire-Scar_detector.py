@@ -277,10 +277,10 @@ for i in range(0,lista_for):
                 ################################################/
             
                 #Colección de imagenes Pre incendio TOA
-                mosaicpre = ee.ImageCollection(sat).filterBounds(region).filterDate(inibf,inicio).map(maskClouds).map(adddate).sort('system:time_start', True)#.map(get_INDEX_L8);
+                mosaicpre = ee.ImageCollection(sat).filterBounds(region).filterDate(inibf,inicio)
                
                 #Colección de imagenes Post incendio TOA
-                mosaicpos = ee.ImageCollection(sat).filterBounds(region).filterDate(fin,finbf).map(maskClouds).map(adddate).sort('system:time_start', False)#.map(get_INDEX_L8);
+                mosaicpos = ee.ImageCollection(sat).filterBounds(region).filterDate(fin,finbf)
             
                 #Colección de imágenes año Post indencio y pre incendio para regla de decisión
                 max_NDVI = ee.ImageCollection(sat).filterDate(inicio_th,fin_th).map(get_INDEX_L8).select('NDVI').max()
@@ -511,6 +511,7 @@ for i in range(0,lista_for):
                 print('exporting data '+id + str(scar) + ' Date ' + fin+' to folder: '+fin[0:4])
                 #fecha = datetime.datetime.utcfromtimestamp(int(inicio.getInfo()['value']) / 1000).strftime('%Y-%m-%d')
                 #print(fecha)
+                print(image_export.getInfo())
                 export = ee.batch.Export.image.toDrive(\
                                                        image=image_export,
                                                        description= id + str(scar) + '_Date_' + fin, #+ '_u' + ind_RdNBR,

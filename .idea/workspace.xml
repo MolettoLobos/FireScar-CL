@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9cc8d991-e72d-431a-8adc-4d545fda0cb4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python/Fire-Scar_detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python/Fire-Scar_detector.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +16,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python/Fire-Scar_detector_CONAF_Brull.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8857">
+            <state relative-caret-position="8840">
               <caret line="521" selection-start-line="521" selection-end-line="521" />
               <folding>
                 <element signature="e#84#93#0" expanded="true" />
@@ -27,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Python/Fire-Scar_detector.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="529" column="67" lean-forward="true" selection-end-line="530" selection-end-column="30" />
+            <state relative-caret-position="99">
+              <caret line="508" lean-forward="true" selection-start-line="508" selection-end-line="508" />
               <folding>
                 <element signature="e#84#93#0" expanded="true" />
               </folding>
@@ -51,9 +52,11 @@
     <findStrings>
       <find>sat =</find>
       <find>sat</find>
-      <find>sat</find>
       <find>export</find>
       <find>for i in ra</find>
+      <find>SWIR</find>
+      <find>bqa</find>
+      <find>.map</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -68,16 +71,17 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="240" />
-    <option name="y" value="126" />
-    <option name="width" value="1440" />
-    <option name="height" value="765" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1943" />
+    <option name="height" value="1043" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -94,7 +98,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -188,6 +191,7 @@
       <updated>1586193274026</updated>
       <workItem from="1586193282139" duration="12536000" />
       <workItem from="1586444224832" duration="669000" />
+      <workItem from="1586553291888" duration="1358000" />
     </task>
     <task id="LOCAL-00001" summary="opts">
       <created>1586193338510</created>
@@ -231,22 +235,29 @@
       <option name="project" value="LOCAL" />
       <updated>1586459048836</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="debug swir undefined">
+      <created>1586553389413</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1586553389413</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13205000" />
+    <option name="totallyTimeSpent" value="14563000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16734034" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16976556" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3280142" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -270,11 +281,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="opts" />
     <MESSAGE value="fixed minor bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed minor bugs" />
+    <MESSAGE value="debug swir undefined" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug swir undefined" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FireScar_CL$Fire_Scar_detector_CONAF_Brull.coverage" NAME="Fire-Scar_detector_CONAF_Brull Coverage Results" MODIFIED="1586384344405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python" />
-    <SUITE FILE_PATH="coverage/FireScar_CL$Fire_Scar_detector.coverage" NAME="Fire-Scar_detector Coverage Results" MODIFIED="1586388844203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python" />
+    <SUITE FILE_PATH="coverage/FireScar_CL$Fire_Scar_detector.coverage" NAME="Fire-Scar_detector Coverage Results" MODIFIED="1586555762924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
@@ -286,7 +298,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Python/Fire-Scar_detector_CONAF_Brull.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8857">
+        <state relative-caret-position="8840">
           <caret line="521" selection-start-line="521" selection-end-line="521" />
           <folding>
             <element signature="e#84#93#0" expanded="true" />
@@ -303,8 +315,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Python/Fire-Scar_detector.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="529" column="67" lean-forward="true" selection-end-line="530" selection-end-column="30" />
+        <state relative-caret-position="99">
+          <caret line="508" lean-forward="true" selection-start-line="508" selection-end-line="508" />
           <folding>
             <element signature="e#84#93#0" expanded="true" />
           </folding>
